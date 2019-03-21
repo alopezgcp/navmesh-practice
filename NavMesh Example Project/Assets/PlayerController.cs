@@ -3,9 +3,13 @@ using UnityEngine.AI;
 
 public class PlayerController : MonoBehaviour
 {
-    public Camera maincam;
+    private Camera maincam;
     public NavMeshAgent agent;
 
+    private void Start()
+    {
+        maincam = Camera.main;    
+    }
     void Update()
     {
         if (Input.GetMouseButton(0))
