@@ -457,7 +457,7 @@ MonoBehaviour:
   m_OverrideTileSize: 0
   m_TileSize: 256
   m_OverrideVoxelSize: 0
-  m_VoxelSize: 0.16666667
+  m_VoxelSize: 0.11666667
   m_BuildHeightMesh: 0
   m_NavMeshData: {fileID: 23800000, guid: c0eecb2fa616d6f4e8082529b9fe9088, type: 2}
 --- !u!4 &1007932017
@@ -484,11 +484,11 @@ GameObject:
   m_Component:
   - component: {fileID: 1112826212}
   - component: {fileID: 1112826214}
-  - component: {fileID: 1112826209}
   - component: {fileID: 1112826215}
   - component: {fileID: 1112826213}
   - component: {fileID: 1112826211}
   - component: {fileID: 1112826210}
+  - component: {fileID: 1112826209}
   m_Layer: 8
   m_Name: Player
   m_TagString: Untagged
@@ -505,7 +505,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1112826208}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 370eba445837b5f4c936c19fec488699, type: 3}
+  m_Script: {fileID: 11500000, guid: 4dd05c04b80de2245a8c932ea2d9ea56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   agent: {fileID: 1112826214}

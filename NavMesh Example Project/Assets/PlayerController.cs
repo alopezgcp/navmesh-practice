@@ -14,14 +14,15 @@ public class PlayerController : MonoBehaviour
     private void Start()
     {
         lastPrizeCount = prizeMgr.count;
-       // agent.SetDestination(SetNearestPrize());
+    //    agent.SetDestination(SetNearestPrize());
 
         maincam = Camera.main;
         agent.updateRotation = false;
     }
 
     void Update()
-    {/*
+    {
+    /*
         if (prizeMgr.count < lastPrizeCount && prizeMgr.count > 0)
         {
             lastPrizeCount = prizeMgr.count;
@@ -33,7 +34,7 @@ public class PlayerController : MonoBehaviour
             agent.SetDestination(new Vector3(6f, 1.5f, 0f));
         }
     */
-      //  /*
+    ///*
         if (Input.GetMouseButton(0))
         {
             Ray ray = maincam.ScreenPointToRay(Input.mousePosition);
@@ -43,7 +44,7 @@ public class PlayerController : MonoBehaviour
                 agent.SetDestination(hit.point);
             }
         }
-     //   */
+    //*/
         if (agent.remainingDistance > agent.stoppingDistance)
         {
             character.Move(agent.desiredVelocity, false, false);
